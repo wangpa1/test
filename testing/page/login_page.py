@@ -20,7 +20,7 @@ class Login(Base):
 if __name__ == "__main__":
     driver = webdriver.Chrome()
     driver.get("https://bosslogin.test.zbjdev.com/cp-index3?appid=23592&back_url=https%3A%2F%2Fworkbench.test.zbjdev.com%2Fyanxuan%2Fsaap%2Flist")
-    zentao = Login(driver,10,0.5)
+    zentao = Login(driver,10,0.6)
     zentao.input_username("yulang")
     zentao.input_password("123456")
     zentao.click_login()
